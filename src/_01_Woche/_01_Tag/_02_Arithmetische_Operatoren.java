@@ -1,4 +1,4 @@
-package _01_Woche;
+package _01_Woche._01_Tag;
 
 public class _02_Arithmetische_Operatoren {
     public static void main(String[] args) {

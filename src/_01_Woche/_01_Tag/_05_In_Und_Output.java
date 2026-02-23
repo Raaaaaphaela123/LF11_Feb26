@@ -1,4 +1,4 @@
-package _01_Woche;
+package _01_Woche._01_Tag;
 
 import javax.swing.*;
 import java.util.Scanner;
