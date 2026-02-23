@@ -2,6 +2,10 @@ package _01_Woche;
 
 public class _00_VariablenUndDatentypen {
 	public static void main(String[] args) {
+
+		// Kommentar
+		/* Auch ein Kommentar, mehrzeilig */
+
 		// Konstante: Mehrwertsteuer
 		final double MWST = 0.19;
 

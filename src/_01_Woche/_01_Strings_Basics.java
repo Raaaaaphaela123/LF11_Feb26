@@ -17,7 +17,6 @@ public class _01_Strings_Basics {
         String kategorie = new String();
         kategorie = "Elektronik";
 
-        /* String-Methoden im Shop-Kontext */
 
         // charAt(i): Liefert ein Zeichen aus dem String, z.B. erster Buchstabe des Produktnamens
         char ersterBuchstabe = produktName.charAt(0); // liefert 'L'
