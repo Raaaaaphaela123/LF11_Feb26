@@ -7,7 +7,7 @@ public class Aufgabensammlung_Operatoren {
         // AUFGABE 1
         int a = 5;
         int b = 10;
-         boolean result1 = (a <b); // TRUE
+        // boolean result1 = (a ___ b); // TRUE
 
 
         // AUFGABE 2
