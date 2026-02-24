@@ -11,6 +11,17 @@ public class _04_For_Schleife {
 //            IO.println(i);
 //        }
 
+
+        // Vergleich zur For-Schleife in Python
+//        for i in range(5):
+//        print(i)
+
+        // gleiche Schleife in Java
+        for (int i = 0; i < 5; i++ ) {
+            IO.println(i);
+        }
+
+
         // Beispiel 1: Ausgabe der Produkte im Warenkorb
         String[] warenkorb = {"Laptop", "Buch", "Kamera", "T-Shirt", "Kaffeemaschine"};
 
@@ -29,7 +40,6 @@ public class _04_For_Schleife {
             // Diese Schleife läuft für jede Zeile erneut durch
             for (int j = 0; j < 4; j++) {
                 IO.println(j + " innen");
-
             }
         }
 
@@ -40,6 +50,7 @@ public class _04_For_Schleife {
             }
             IO.println();
         }
+
 
         // Enhanced For-Loop (For-Each)
         System.out.println("\nProdukte im Warenkorb (Enhanced For-Loop):");
