@@ -78,6 +78,7 @@ public class _01_Eindimensionale_Arrays {
         namen[0] = "Maximilian";
         IO.println(namen[0]);
 
+
     }
 
     // Methode zum Ausgeben eines Arrays mit doubles
