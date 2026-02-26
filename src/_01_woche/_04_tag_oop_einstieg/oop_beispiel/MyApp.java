@@ -24,9 +24,8 @@ public class MyApp {
         Tier meinHund = new Hund();
         meinHund.macheTon();
 
+        // In der Klasse wurde noch keine Kapselung gemacht
 //        Katze filou = new Katze();
-//        filou.name = "Filou";
-//        filou.alter = 5;
 //        filou.jagtMaeuse = true;
 
     }
