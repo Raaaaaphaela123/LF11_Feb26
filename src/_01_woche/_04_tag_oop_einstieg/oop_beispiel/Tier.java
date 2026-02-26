@@ -1,8 +1,21 @@
 package _01_woche._04_tag_oop_einstieg.oop_beispiel;
 
 public class Tier {
+    // Instanzvariablen
     private String name;
     private int alter;
+
+    // Konstruktor
+    public Tier(){
+        this.name = "Hat noch keinen Namen";
+    }
+
+    // Konstruktor, der gleich einen Namen verlangt
+    public Tier(String name, int alter){
+        IO.println("Ich bin im Tier Konstruktor");
+        this.name = name;
+        this.alter = alter;
+    }
 
     // Methode, die später überschrieben werden soll
     public void macheTon() {
@@ -10,8 +23,6 @@ public class Tier {
     }
 
     // Getter & Setter generieren lassen -> alt + einfg
-
-    // Getter
     public String getName() {
         return name;
     }

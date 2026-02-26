@@ -1,7 +1,20 @@
 package _01_woche._04_tag_oop_einstieg.oop_beispiel;
 
 public class Hund extends Tier {
+    // Instanzvariablen
    private String leinenLaenge;
+
+   // Konstruktor
+
+    // muss explizit erstellt werden, wenn wir ihn noch brauche und einen eigenen Konstruktor geschrieben haben
+    public Hund() {
+    }
+
+    // Konstruktor mit allen Attributen
+    public Hund(String name, int alter, String leinenLaenge) {
+        super(name, alter);
+        this.leinenLaenge = leinenLaenge;
+    }
 
     public String getLeinenLaenge() {
         return leinenLaenge;
