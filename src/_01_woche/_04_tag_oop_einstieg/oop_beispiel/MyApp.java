@@ -8,8 +8,8 @@ public class MyApp {
         IO.println(bello.getName());
         IO.println(bello.getLeinenLaenge());
 
-        bello.macheSound();
-        bello.macheSound("laut");
+        bello.spiele();
+        bello.spiele("wild");
 
         bello.macheTon();
 

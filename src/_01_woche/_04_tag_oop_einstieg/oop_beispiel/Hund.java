@@ -17,12 +17,12 @@ public class Hund extends Tier {
     }
 
     // Methoden überladen
-    public void macheSound(){
-        IO.println("Bellt");
+    public void spiele(){
+        IO.println("Hund spielt");
     }
 
-    public void macheSound(String lautstaerke){
-        IO.println("Bellt " + lautstaerke);
+    public void spiele(String ernsthaftigkeit){
+        IO.println("Hund spielt " + ernsthaftigkeit);
 
     }
 }
