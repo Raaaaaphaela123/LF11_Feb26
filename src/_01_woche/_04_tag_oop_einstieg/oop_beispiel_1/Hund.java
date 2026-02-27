@@ -1,4 +1,4 @@
-package _01_woche._04_tag_oop_einstieg.oop_beispiel;
+package _01_woche._04_tag_oop_einstieg.oop_beispiel_1;
 
 public class Hund extends Tier {
     // Instanzvariablen
@@ -36,6 +36,9 @@ public class Hund extends Tier {
 
     public void spiele(String ernsthaftigkeit){
         IO.println("Hund spielt " + ernsthaftigkeit);
+    }
 
+    public String informationenAnzeigen(){
+        return "Name: " + getName() + ", Alter: " + getAlter() + ", Leinenlänge: " + leinenLaenge;
     }
 }

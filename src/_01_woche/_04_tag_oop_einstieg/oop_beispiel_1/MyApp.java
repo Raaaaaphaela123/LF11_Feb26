@@ -1,4 +1,6 @@
-package _01_woche._04_tag_oop_einstieg.oop_beispiel;
+package _01_woche._04_tag_oop_einstieg.oop_beispiel_1;
+
+import _01_woche._04_tag_oop_einstieg.oop_beispiel_2.Haus;
 
 public class MyApp {
     static void main() {
@@ -15,10 +17,19 @@ public class MyApp {
 
         // Konstruktor mit allen Attributen
         Hund lisa = new Hund("Lisa", 4, "1.5 m");
-        IO.println("Lisa mit Konstruktor mit allen Instanzvariablen und super(): " + lisa.getName() + " " + lisa.getLeinenLaenge());
+        IO.println(" lisa.informationenAnzeigen();");
+
+        // Methode mit Rückgabewert aufrufen -> gibt durch den print die Infos aus
+        IO.println(lisa.informationenAnzeigen());
+
+        // Mit dem Rückgabewert kann weitergearbeitet werden
+        String erweiterteAusgabe = lisa.informationenAnzeigen();
+        erweiterteAusgabe += ", der Hund beißt.";
+        IO.println(erweiterteAusgabe);
+
 
         Hund louli = new Hund("Louli", 8, "8 m");
-        IO.println("Louli: " + louli.getName() + ", " + louli.getLeinenLaenge());
+
 
         // Aufruf von überladener Methode aus der Klasse Hund
         bello.spiele();
@@ -35,6 +46,10 @@ public class MyApp {
         // In der Klasse wurde noch keine Kapselung gemacht
 //        Katze filou = new Katze();
 //        filou.jagtMaeuse = true;
+
+        // importierte Klasse aus anderem package
+        Haus meinHaus = new Haus();
+
 
     }
 
