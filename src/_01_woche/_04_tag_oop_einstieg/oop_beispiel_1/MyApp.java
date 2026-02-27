@@ -8,6 +8,7 @@ public class MyApp {
 
         // default Konstruktor Aufruf
         Hund bello = new Hund();
+        IO.println("Bello toString: " + bello);
         // setzen der Instanzattribute
         bello.setName("Bello");
         bello.setLeinenLaenge("3 Meter");

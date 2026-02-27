@@ -17,9 +17,16 @@ public class Tier {
         this.alter = alter;
     }
 
+    // Methoden
     // Methode, die später überschrieben werden soll
     public void macheTon() {
         IO.println("Das Tier macht einen Ton");
+    }
+
+    @Override
+    public String toString() {
+        return "alter = " + alter +
+                ", name = " + name;
     }
 
     // Getter & Setter generieren lassen -> alt + einfg

@@ -16,14 +16,7 @@ public class Hund extends Tier {
         this.leinenLaenge = leinenLaenge;
     }
 
-    public String getLeinenLaenge() {
-        return leinenLaenge;
-    }
-
-    public void setLeinenLaenge(String leinenLaenge) {
-        this.leinenLaenge = leinenLaenge;
-    }
-
+    // Methoden
     @Override
     public void macheTon() {
         IO.println("Der Hund bellt");
@@ -38,7 +31,24 @@ public class Hund extends Tier {
         IO.println("Hund spielt " + ernsthaftigkeit);
     }
 
+    // toString überschreiben -> generieren über alt + einfg
+    @Override
+    public String toString() {
+        return super.toString() // greift mit super auf die toString der Elternklasse zu
+                + ", leinenLaenge = " + leinenLaenge;
+    }
+
     public String informationenAnzeigen(){
         return "Name: " + getName() + ", Alter: " + getAlter() + ", Leinenlänge: " + leinenLaenge;
     }
+
+    public String getLeinenLaenge() {
+        return leinenLaenge;
+    }
+
+    public void setLeinenLaenge(String leinenLaenge) {
+        this.leinenLaenge = leinenLaenge;
+    }
+
+
 }
