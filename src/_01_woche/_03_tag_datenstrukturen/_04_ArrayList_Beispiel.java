@@ -1,18 +1,23 @@
 package _01_woche._03_tag_datenstrukturen;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class _04_ArrayList_Beispiel {
     public static void main(String[] args) {
-        // Erzeugung einer ArrayList für Artikel
+
+      // ArrayList mit Initialwerten
+      ArrayList<String> meineDirekteListe = new ArrayList<>(List.of("a", "b", "c"));
+
+      // Erzeugung einer ArrayList für Artikel ohne Initialwerte
       ArrayList<String> artikelListe = new ArrayList<>();
 
-        // Elemente hinzufügen (add)
-        artikelListe.add("Laptop");
-        artikelListe.add("Maus");
-        artikelListe.add("Tastatur");
+      // Elemente hinzufügen (add)
+      artikelListe.add("Laptop");
+      artikelListe.add("Maus");
+      artikelListe.add("Tastatur");
 
-        System.out.println(artikelListe);
+      System.out.println(artikelListe);
 
         // Einzelne Elemente abrufen (get)
         System.out.println(artikelListe.get(1));
