@@ -48,9 +48,15 @@ public class VererbungAufgaben {
         // TODO:
         // 1) Erstelle ein Admin-Objekt
         //    - Übergib username, email, superAdmin
+        Admin admin = new Admin("max123", "max@test.de", true);
+
         // 2) Erstelle ein Gast-Objekt
         //    - Übergib username, email, gueltigBisTag
+        Gast gast = new Gast("anna_guest", "anna@test.de", 20);
+
         // 3) Rufe jeweils die info()-Methode auf, um die Informationen auszugeben
+        admin.info();
+        gast.info();
         //
         // Beispiel:
         // Admin admin1 = new Admin("max123", "max@test.de", true);
@@ -75,10 +81,20 @@ TODO:
 
 class User {
     // TODO: Attribute definieren
+    protected String username;
+    protected String email;
 
     // TODO: Konstruktor schreiben
+    public User(String email, String username) {
+        this.email = email;
+        this.username = username;
+    }
+
 
     // TODO: Methode info() schreiben
+    public void info() {
+        IO.println("User: " + username + "(" + email + ")");
+    }
 }
 
 // ===========================
@@ -97,10 +113,21 @@ TODO:
 
 class Admin extends User {
     // TODO: Attribut superAdmin definieren
+    private boolean superAdmin;
 
     // TODO: Konstruktor schreiben
 
+    public Admin(String email, String username, boolean superAdmin) {
+        super(email, username);
+        this.superAdmin = superAdmin;
+    }
+
     // TODO: info() überschreiben
+
+    @Override
+    public void info() {
+        IO.println("Admin: " + username + "(" + email +"), SuperAdmin: " + superAdmin);
+    }
 }
 
 // ===========================
@@ -110,15 +137,26 @@ class Admin extends User {
 TODO:
 - Erstelle eine Klasse 'Gast', die von User erbt
 - Zusätzliches Attribut: private int gueltigBisTag
+- Konstruktor schreiben
 - Überschreibe info() Methode:
     - Ausgabeformat: Gast: <username>, gültig bis Tag <gueltigBisTag>
 */
 
 class Gast extends User {
     // TODO: Attribut gueltigBisTag definieren
+    private int gueltigBisTag;
 
     // TODO: Konstruktor schreiben
+    public Gast(String email, String username, int gueltigBisTag) {
+        super(email, username);
+        this.gueltigBisTag = gueltigBisTag;
+    }
 
     // TODO: info() überschreiben
+
+    @Override
+    public void info() {
+        IO.println("Gast: " + username + "(" + email +"), gültig bis: " + gueltigBisTag);
+    }
 }
 
