@@ -23,7 +23,7 @@ public class DatenbankVerbindung {
 
             // INSERT -> neuen User hinzufügen
             String insertSQL = "INSERT INTO users (name, password) VALUES ('Max', 'Geheim123!')";
-            statement.execute(insertSQL);
+            statement.executeUpdate(insertSQL);
 
 
             // SELECT -> vorhandene Daten anzeigen lassen
@@ -36,7 +36,7 @@ public class DatenbankVerbindung {
 
             // UPDATE -> User verändern
             String updateSQL = "UPDATE users SET name = 'Maximilian' WHERE name = 'Max'";
-            statement.execute(updateSQL);
+            statement.executeUpdate(updateSQL);
 
             connection.close();
 
