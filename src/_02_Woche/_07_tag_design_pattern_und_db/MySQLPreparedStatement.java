@@ -3,7 +3,7 @@ package _02_Woche._07_tag_design_pattern_und_db;
 import java.sql.*;
 
 public class MySQLPreparedStatement {
-    private static final String URL = "jdbc:mysql://localhost:3306/testdb";
+    private static final String URL = "jdbc:mysql://localhost:3307/testdb";
     private static final String USER = "root";
     private static final String PASSWORD = "";
 

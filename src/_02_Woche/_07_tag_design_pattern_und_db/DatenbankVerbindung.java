@@ -15,11 +15,15 @@ public class DatenbankVerbindung {
             IO.println("Verbindung erfolgreich!");
 
             Statement statement = connection.createStatement();
-
             // DELETE -> User löschen
             String deleteSQL = "DELETE FROM users WHERE name = 'Maximilian'";
             int rowsDeleted = statement.executeUpdate(deleteSQL);
             IO.println("Rows deleted: " + rowsDeleted);
+
+
+            // INSERT -> neuen User hinzufügen
+            String insertSQL = "INSERT INTO users (name, password) VALUES ('Max', 'Geheim123!')";
+            statement.execute(insertSQL);
 
 
             // SELECT -> vorhandene Daten anzeigen lassen
@@ -30,13 +34,9 @@ public class DatenbankVerbindung {
                 IO.println("ID: " + resultSet.getInt("id") + ", Name: " + resultSet.getString("name"));
             }
 
-            // INSERT -> neuen User hinzufügen
-            String insertSQL = "INSERT INTO users (name, password) VALUES ('Max', 'Geheim123!')";
-            statement.execute(insertSQL);
-
             // UPDATE -> User verändern
             String updateSQL = "UPDATE users SET name = 'Maximilian' WHERE name = 'Max'";
-            statement.executeQuery(updateSQL);
+            statement.execute(updateSQL);
 
             connection.close();
 
